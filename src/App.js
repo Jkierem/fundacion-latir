@@ -7,7 +7,9 @@ import { Route, Switch } from 'react-router-dom'
 const App = () => {
   return(
     <Switch>
-      <Route path="/" render={() => <Dummy what="Webpage" />}/>
+      <Route path="/">
+        <Dummy what="Webpage" />
+      </Route>
     </Switch>
   )
 }
