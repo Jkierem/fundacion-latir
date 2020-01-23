@@ -7,7 +7,7 @@ const Dummy = ({ what }) => {
   return(
     <div className="dummy" >
       <div>
-      There will be a cool <RedText>{what}</RedText> here. Believe me.
+        There will be a cool <RedText>{what}</RedText> here. Believe me.
       </div>
     </div>
   )

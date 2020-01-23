@@ -4,8 +4,6 @@ import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
 import './reset.css'
 
-// Remember to add router
-
 ReactDOM.render(
     <Router>
         <App />
