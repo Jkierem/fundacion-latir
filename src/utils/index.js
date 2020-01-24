@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState, useDebugValue } from 'react';
-import { isBetween, lt } from '@juan-utils/functions'
+import { isBetween, lt, eq } from '@juan-utils/functions'
 
 export const useWindowSize = () => {
   const [size, setSize] = useState([window.innerWidth, window.innerHeight]);
@@ -37,12 +37,6 @@ export const Devices = {
     Laptop: "Laptop",
 }
 
-// export const getDevice = () => conditional(
-//     [ lt(426) , () => Devices.Mobile],
-//     [ isBetween(426,1024) , () => Devices.Tablet ],
-//     [ gte(1024) , () => Devices.Laptop ]
-// )(window.screen.width)
-
-export const isMobile = () => getDevice() === Devices.Mobile
-export const isTablet = () => getDevice() === Devices.Tablet
-export const isLaptop = () => getDevice() === Devices.Laptop
+export const isMobile = eq(Devices.Mobile)
+export const isTablet = eq(Devices.Tablet)
+export const isLaptop = eq(Devices.Laptop)

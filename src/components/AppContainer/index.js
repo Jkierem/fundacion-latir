@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 90%;
   height: 90%;
   margin: 0;
+  font-family: QuinoaRound;
 `
 
 const AppContainer = (props) => {

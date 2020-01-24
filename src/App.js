@@ -1,5 +1,4 @@
 import React from 'react'
-import { Dummy } from './views';
 import { AppContainer } from './components';
 import { Route, Switch } from 'react-router-dom'
 
@@ -10,7 +9,6 @@ const App = () => {
     <AppContainer>
       <Switch>
         <Route path="/">
-          <Dummy what="Webpage" />
         </Route>
       </Switch>
     </AppContainer>
