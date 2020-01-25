@@ -34,7 +34,7 @@ const BarContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin: 10px;
+    margin-left: 6px;
     cursor: pointer;
 `
 
