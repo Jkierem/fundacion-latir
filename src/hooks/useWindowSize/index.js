@@ -1,5 +1,9 @@
 import { useLayoutEffect, useState, useDebugValue } from 'react';
 
+/**
+ * @returns {[ number , number ]} Window dimensions
+ * @description returns the window dimensions and updates when window size is changed
+ */
 const useWindowSize = () => {
     const [size, setSize] = useState([window.innerWidth, window.innerHeight]);
     useLayoutEffect(() => {

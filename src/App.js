@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { AppContainer } from './components';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom';
 
 // This component should handle the routes
 
