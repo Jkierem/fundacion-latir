@@ -1256,10 +1256,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@juan-utils/functions@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@juan-utils/functions/-/functions-2.2.0.tgz#3e8b407543a375479e99668d0676be8756384085"
-  integrity sha512-kWeJPgVyToj0PRxo4KwQjcbGKZJXegOXaWWUPYzRhoJTYP5nY84JcgyPhoOrrfqSvcNfhV8NYqxf3HUaTVRVFQ==
+"@juan-utils/functions@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@juan-utils/functions/-/functions-2.3.0.tgz#8aeef46f13141b16252d07247157bbf628ca2db7"
+  integrity sha512-qvHNeQeRfDj8Z4tUCersOSFvK07EEF3r9jL0jUw9KJeI6Ls1+X8Za77e4WzASCTQP+4isGrqH1G9Gg7RpP0Iqg==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
