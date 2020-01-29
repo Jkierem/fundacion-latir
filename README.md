@@ -11,19 +11,52 @@ Runs tests. Tests are files ending in 'test.js'. Uses jest and runs in watch mod
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder
+Builds the app for production to the `build` folder (which is ignored for the repo)
 
 ## Common Design Decisions
 
 - Avoid adding new dependencies. Minimal amount of dependencies is preferred. If a new dependency is needed, it must be approved and made a case of why it is needed.
-- All new features are added through a PR and need a code review with approval of dev lead.
+- All new features are added through a PR and need a code review with approval of the dev lead.
 - **NEVER** push directly to master.
+- Due to time constraints, tests are not required
+- We are not using linters but bear in mind that `create-react-app` already has some linting options that will show up as warnings when running `yarn start`. It is preferrable to follow those linting rules.
 
 ## Git Flow
 
-- `master`: branch is protected. Merges need to be reviewed by the code owner to be merged
-- `development`: all feature should branch off of this branch. On release, this is merged to `master`
-- `LATIR-XXX`: branch for feature LATIR-XXX(i.e. LATIR-23). When done, a PR for merging to development should be created with a description of what is achieved
+- `master`: this branch is protected. Merges need to be reviewed by the code owner to be merged
+- `development`: all feature branches should branch off of this branch. On release, this is merged to `master`
+- `LATIR-XXX`: branch for feature LATIR-XXX(i.e. LATIR-23). When done, a PR for merging to development should be created with a description of what is achieved.
+- When updating a branch, use ```git pull --rebase``` to avoid a merge
+- All commits made in a branch must be prepended by the branch name. That is to easily identify the branch that the commit belongs to. For convenience, here is a bash command that recieves a comment and creates a commit with the current branch name prepended:
+
+__Note__ : This is written for a unix shell. In a windows shell this command won`t work.
+
+```bash
+commit() {
+	_msg=$1
+	if [ "$_msg" == "-m" ]
+	then
+		_msg=$2
+	fi
+	if [ $_msg ]
+	then
+	 	_branch=$(git branch | grep \* )
+  		git commit -m "${_branch:2}: $_msg"
+	else
+		echo "No commit message was supplied. No commit is made."
+	fi
+}
+```
+
+Add it to the `.bashrc` file and re open the console to use it. Usage is as follows:
+
+```bash
+# moving to a random branch for demostration purposes
+git checkout LATIR-42
+commit "Adding a super cool feature"
+# same as running
+# git commit -m "LATIR-42: Adding a super cool feature"
+```
 
 ## Folder Structure
 
