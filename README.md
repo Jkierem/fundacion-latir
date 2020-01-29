@@ -18,7 +18,7 @@ Builds the app for production to the `build` folder (which is ignored for the re
 - Avoid adding new dependencies. Minimal amount of dependencies is preferred. If a new dependency is needed, it must be approved and made a case of why it is needed.
 - All new features are added through a PR and need a code review with approval of the dev lead.
 - **NEVER** push directly to master.
-- Due to time constraints, tests are not required
+- Due to time constraints, tests are not required but the developer should make sure that the feature is indeed working.
 - We are not using linters but bear in mind that `create-react-app` already has some linting options that will show up as warnings when running `yarn start`. It is preferrable to follow those linting rules.
 
 ## Git Flow
