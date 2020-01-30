@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
-import PropTypes from 'prop-types'
 
 import Colors from '../../utils/colors';
 
@@ -25,22 +24,27 @@ const LinkStyle = styled.a`
     }
 `
 
-const Link = ({ to , children , text , replace }) => {
+/**
+ * @typedef {{
+ *  to: string;
+ *  children?: string;
+ *  text?: string;
+ *  replace?: boolean;
+ *  onClick?: (e: any) => void;
+ * }} LinkProps
+ * @param {LinkProps} props
+ * @description A link element that on click, moves to the 'to' route. Requires either a text prop or children
+ * @returns {JSX.Element} anchor html tag
+ */
+const Link = ({ to , children , text , replace , onClick }) => {
     const history = useHistory();
-    const handleClick = () => replace ? history.replace(to) : history.push(to);
+    const handleClick = (e) => {
+        onClick && onClick(e)
+        replace ? history.replace(to) : history.push(to);
+    }
     return <LinkWrapper>
         <LinkStyle onClick={handleClick}>{children || text}</LinkStyle>
     </LinkWrapper>
-}
-
-Link.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.element
-    ]),
-    text: PropTypes.string,
-    to: PropTypes.string.isRequired,
-    replace: PropTypes.bool,
 }
 
 export default Link;
