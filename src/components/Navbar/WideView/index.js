@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { identity } from '@juan-utils/functions';
-import { useHistory } from 'react-router-dom';
 
 import Colors from '../../../utils/colors';
 import LogoIcon from '../../LogoIcon';
 import NoSelect from '../../NoSelect';
+import Link from '../../Link';
 
 const LinkContainer = styled.nav`
     margin: 6px;
@@ -15,26 +15,6 @@ const LinkContainer = styled.nav`
     align-items: center;
     justify-content: flex-start;
 ` 
-
-const LinkWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 6px;
-    color: ${Colors.White.hexString()}
-`
-
-const LinkStyle = styled.a`
-    padding: 6px;
-    color: inherit;
-    text-decoration: none;
-    font-size: 1em;
-    cursor: pointer;
-
-    &:hover {
-        text-decoration: underline;
-    }
-`
 
 const WideLogoContainer = styled.header`
     display: flex;
@@ -47,31 +27,15 @@ const WideLogoContainer = styled.header`
     user-select: none;
 `
 
-const Link = ({ to , children }) => {
-    const history = useHistory();
-    const handleClick = () => {
-        history.push(to);
-    }
-    return <LinkStyle onClick={handleClick}>{children}</LinkStyle>
-}
-
 const Links = () => (
     <LinkContainer>
-        <LinkWrapper>
-            <Link to="/">¿Quiénes Somos?</Link>
-        </LinkWrapper>
+        <Link to="/">¿Quiénes Somos?</Link>
         <NoSelect>|</NoSelect>
-        <LinkWrapper>
-            <Link to="/">¿Qué hacemos?</Link>
-        </LinkWrapper>
+        <Link to="/">¿Qué hacemos?</Link>
         <NoSelect>|</NoSelect>
-        <LinkWrapper>
-            <Link to="/">¿Cómo lo hacemos?</Link> 
-        </LinkWrapper>
+        <Link to="/">¿Cómo lo hacemos?</Link> 
         <NoSelect>|</NoSelect>
-        <LinkWrapper>
-            <Link to="/">Rendición de Cuentas</Link> 
-        </LinkWrapper>
+        <Link to="/">Rendición de Cuentas</Link> 
     </LinkContainer>
 )
 
