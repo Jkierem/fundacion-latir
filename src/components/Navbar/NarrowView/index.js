@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { identity } from '@juan-utils/functions';
 import Colors from '../../../utils/colors';
 import HamburgerButton from '../../HamburgerButton';
-import LogoIcon from '../../LogoIcon';
+import Icon from "../../Icon";
+import logo from "../../../resources/images/relogoslatir/512x512px_blanco.svg"
 
 const NarrowLogoContainer = styled.header`
     display: flex;
@@ -19,7 +20,7 @@ const NarrowLogoContainer = styled.header`
 const NarrowLogo = ({ onClick=identity }) => {
     return <NarrowLogoContainer onClick={onClick} >
         {/**This is where the icon will be*/}
-        <LogoIcon />
+        <Icon src={logo} alt="logo"/>
     </NarrowLogoContainer>
 }
 

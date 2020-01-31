@@ -19,6 +19,7 @@ const NavbarStyled = styled.div`
     max-height: 64px;
     color: ${Colors.White.hexString()};
     font-weight: normal;
+    padding: 8px;
 `
 
 const Navbar = () => {
