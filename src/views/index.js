@@ -1,1 +1,10 @@
-// Here we should export all view components for easy access
+export { default as Home } from './Home'
+export { default as WhatIsLatir } from './WhatIsLatir'
+export { default as OurProjects } from './OurProjects'
+export { default as HowToParticipate } from './HowToParticipate'
+export { default as Accountability } from './Accountability'
+export { default as Allies } from './Allies'
+export { default as Gallery } from './Gallery'
+export { default as Workshops } from './Workshops'
+export { default as Donate } from './Donate'
+export { default as Finance } from './Finance'

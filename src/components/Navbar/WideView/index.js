@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { identity } from '@juan-utils/functions';
+import { createBrowserHistory } from 'history';
+
 
 import Colors from '../../../utils/colors';
 import NoSelect from '../../NoSelect';
@@ -30,13 +32,17 @@ const WideLogoContainer = styled.header`
 
 const Links = () => (
     <LinkContainer>
-        <Link to="/">¿Quiénes Somos?</Link>
+        <Link to="/what-is-latir">¿Qué es Latir?</Link>
         <NoSelect>|</NoSelect>
-        <Link to="/">¿Qué hacemos?</Link>
+        <Link to="/our-projects">Nuestros Proyectos</Link>
         <NoSelect>|</NoSelect>
-        <Link to="/">¿Cómo lo hacemos?</Link> 
+        <Link to="/how-to-participate">¿Cómo participar?</Link>
         <NoSelect>|</NoSelect>
-        <Link to="/">Rendición de Cuentas</Link> 
+        <Link to="/finance">Rendición de Cuentas</Link>
+        <NoSelect>|</NoSelect>
+        <Link to="/gallery">Galería</Link>
+        <NoSelect>|</NoSelect>
+        <Link to="/workshops">Talleres</Link>
     </LinkContainer>
 )
 
@@ -49,10 +55,16 @@ const WideLogo = ({ onClick=identity }) => {
     </WideLogoContainer>
 }
 
+const handleClickLogo = (e) => {
+    const history = createBrowserHistory();
+    history.push('/')
+
+}
+
 const WideView = () => {
     return (
         <>
-            <WideLogo />
+            <WideLogo onClick={handleClickLogo}/>
             <Links />
         </>
     )
