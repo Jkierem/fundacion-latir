@@ -22,6 +22,7 @@ const FigureStyled = styled.img`
  *  src: string;
  *  alt: string;
  *  size?: string;
+ *  }} IconProps
  * @param {IconProps} props
  * @description An icon element that returns an icon with the specified size. The default size is 'normal' (64px)
  * @returns {JSX.Element} figure html tag
