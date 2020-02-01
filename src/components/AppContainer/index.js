@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import Navbar from '../Navbar';
 
 const Content = styled.main`
-  width: 90%;
+  width: 100%;
   height: 90%;
   margin: 0;
-  padding-top: 64px;
+  padding-top: 80px;
 `
 
 const Container = styled.div`
