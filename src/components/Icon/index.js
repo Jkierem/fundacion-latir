@@ -28,7 +28,7 @@ const FigureStyled = styled.img`
  */
 const Icon = ({ src, alt, size='normal' }) => (
     <figure>
-        <FigureStyled src={ src } alt={ alt }/>
+        <FigureStyled src={ src } alt={ alt } size={ size }/>
     </figure>
 )
 
