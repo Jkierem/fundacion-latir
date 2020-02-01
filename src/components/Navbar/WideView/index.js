@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { identity } from '@juan-utils/functions';
 
 import Colors from '../../../utils/colors';
-import LogoIcon from '../../LogoIcon';
 import NoSelect from '../../NoSelect';
 import Link from '../../Link';
+import logo from "../../../resources/images/relogoslatir/512x512px_blanco.svg";
+import Icon from "../../Icon";
 
 const LinkContainer = styled.nav`
     margin: 6px;
@@ -41,8 +42,7 @@ const Links = () => (
 
 const WideLogo = ({ onClick=identity }) => {
     return <WideLogoContainer onClick={onClick} >
-        {/**This is where the icon will be*/}
-        <LogoIcon />
+        <Icon src={logo} alt="logo"/>
         <h2>
             Fundación Latir
         </h2>
