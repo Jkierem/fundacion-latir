@@ -1,5 +1,16 @@
 # Fundacion Latir
 
+## Getting started
+
+```bash
+# Clone the repo
+git clone https://github.com/Jkierem/fundacion-latir
+# Move to the folder containing the repo
+cd fundacion-latir
+# Install dependencies using yarn *NEVER* use npm
+yarn install
+```
+
 ### `yarn start`
 
 Runs the app in the development mode.
@@ -15,11 +26,18 @@ Builds the app for production to the `build` folder (which is ignored for the re
 
 ## Common Design Decisions
 
+- **use yarn**
 - Avoid adding new dependencies. Minimal amount of dependencies is preferred. If a new dependency is needed, it must be approved and made a case of why it is needed.
 - All new features are added through a PR and need a code review with approval of the dev lead.
 - **NEVER** push directly to master.
 - Due to time constraints, tests are not required but the developer should make sure that the feature is indeed working.
 - We are not using linters but bear in mind that `create-react-app` already has some linting options that will show up as warnings when running `yarn start`. It is preferrable to follow those linting rules.
+
+## Dependencies
+
+- [@juan-utils/functions](https://www.npmjs.com/package/@juan-utils/functions) : utility library
+- [@juan-utils/structures](https://www.npmjs.com/package/@juan-utils/structures) : utility structures library
+- [JuanForm](https://www.npmjs.com/package/juanform) : library conatining form components
 
 ## Git Flow
 
