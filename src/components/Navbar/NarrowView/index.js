@@ -19,7 +19,6 @@ const NarrowLogoContainer = styled.header`
 
 const NarrowLogo = ({ onClick=identity }) => {
     return <NarrowLogoContainer onClick={onClick} >
-        {/**This is where the icon will be*/}
         <Icon src={logo} alt="logo"/>
     </NarrowLogoContainer>
 }
