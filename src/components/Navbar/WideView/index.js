@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { identity } from '@juan-utils/functions';
-import { createBrowserHistory } from 'history';
+import { useHistory } from 'react-router-dom'
 
 
 import Colors from '../../../utils/colors';
@@ -55,13 +55,11 @@ const WideLogo = ({ onClick=identity }) => {
     </WideLogoContainer>
 }
 
-const handleClickLogo = (e) => {
-    const history = createBrowserHistory();
-    history.push('/')
-
-}
-
 const WideView = () => {
+    const history = useHistory();
+    const handleClickLogo = (e) => {
+        history.push('/')
+    }
     return (
         <>
             <WideLogo onClick={handleClickLogo}/>
