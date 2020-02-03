@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppContainer } from './components';
+import { AppContainer, Input } from './components';
 import { Route, Switch } from 'react-router-dom';
 import {
     Accountability,
@@ -12,6 +12,7 @@ import {
     OurProjects,
     WhatIsLatir, Workshops
 } from "./views";
+import { Form } from 'juanform';
 
 const App = () => {
   return(
