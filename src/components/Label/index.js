@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Utils } from 'juanform';
 import Colors from '../../utils/colors';
 import Fonts from '../../utils/fonts';
-
-const { createLabel } = Utils
-
 
 const StyledCustomLabel = styled.label`
   color: ${Colors.getColorHex};
@@ -45,4 +41,6 @@ const CustomLabel = ({
   )
 }
 
-export default createLabel(CustomLabel);
+CustomLabel.formElement = "Label";
+
+export default CustomLabel;

@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Utils } from 'juanform';
+import { identity } from '@juan-utils/functions';
 
 import Colors from '../../utils/colors';
 import Fonts from '../../utils/fonts';
 import Depth from '../../utils/depth';
-import { identity } from '@juan-utils/functions';
 
 const StyledButton = styled.button`
   border-radius: 5px;
@@ -35,9 +34,9 @@ const StyledButton = styled.button`
  *  submit?: boolean;
  *  theme?: Theme;
  *  onClick?: (e: React.SyntheticEvent, info: any) => void;
- * }}
+ * }} ButtonProps
  * @param {ButtonProps} props
- * @description Button component. The onClick prop is overriden when inside a Form component
+ * @description Button component. The onClick prop is overriden when inside a Form component. All other props recieved are fowarded to the component.
  */
 const CustomButton = ({ onClick=identity , ...rest}) => {
   const handleClick = (e) => {
@@ -47,4 +46,6 @@ const CustomButton = ({ onClick=identity , ...rest}) => {
   return <StyledButton onClick={handleClick} {...rest} />
 }
 
-export default Utils.createButton(CustomButton);
+CustomButton.formElement = "Button";
+
+export default CustomButton;

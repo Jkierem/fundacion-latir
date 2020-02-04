@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
-import { Utils } from 'juanform';
 import { pick, omit } from "@juan-utils/functions";
 import Colors from '../../utils/colors';
 
@@ -71,7 +70,20 @@ const valueExists = (value) => {
     return value && value !== '' && (value.trim ? value.trim() !== '' : true)
 }
 
-const CustomInput = Utils.createInput((props) => {
+/**
+ * @typedef {{
+ *  defaultValue: any;
+ *  id: string;
+ *  name: string;
+ *  label: string;
+ *  fluid: boolean;
+ *  onChange: (e: React.SyntheticEvent, info: any) => void;
+ *  type: string;
+ * }} InputProps
+ * @param {InputProps} props 
+ * @description Inputs for forms. If inside a Form component, onChange is overriden
+ */
+const CustomInput = (props) => {
     const [value, setValue] = useState(props.defaultValue);
 
     const handleChange = (e) => {
@@ -107,6 +119,8 @@ const CustomInput = Utils.createInput((props) => {
                 </label>
             }
     </StyledContainer>)
-});
+};
+
+CustomInput.formElement = "Input";
 
 export default CustomInput;
