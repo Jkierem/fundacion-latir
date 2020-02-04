@@ -7,6 +7,10 @@ const Levels = {
     5: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
 }
 
+/**
+ * returns the box shadow for a material design depth
+ * @param {number} depth 
+ */
 const Depth = (depth) => Levels[depth]
 
 export default Depth;

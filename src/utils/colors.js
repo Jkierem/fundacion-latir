@@ -122,7 +122,7 @@ const getDarkColorHex = (options) => compose( propApply("hexString", []) , pickD
  * @param {{ theme: Theme; }} options 
  * @returns {string} string hex representation of light theme color
  */
-const getLightColorHex = compose( propApply("hexString", []) , pickLightColor );
+const getLightColorHex = (options) => compose( propApply("hexString", []) , pickLightColor )(options);
 
 export const RawColors = {
     Black: Color(30,37,41),

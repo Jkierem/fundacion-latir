@@ -16,6 +16,12 @@ const Sizes = {
     Tiny: "tiny"
 }
 
+
+/**
+ * returns the size value in 'em' for a given size.
+ * @typedef {{ size: ("largest" | "huge" | "big" | "normal" | "small" | "tiny") }} FontOptions
+ * @param {FontOptions} param0 
+ */
 const pickFontSize = ({ size }) => {
     switch(size){
         case Sizes.Huge:
