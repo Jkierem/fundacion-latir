@@ -1256,11 +1256,6 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@juan-utils/functions@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@juan-utils/functions/-/functions-2.3.0.tgz#8aeef46f13141b16252d07247157bbf628ca2db7"
-  integrity sha512-qvHNeQeRfDj8Z4tUCersOSFvK07EEF3r9jL0jUw9KJeI6Ls1+X8Za77e4WzASCTQP+4isGrqH1G9Gg7RpP0Iqg==
-
 "@juan-utils/functions@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@juan-utils/functions/-/functions-2.4.0.tgz#be7f9879e727e2acf75bf00ef52f9c9797f2d928"

@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "fundacionlatir.org",
   "dependencies": {
-    "@juan-utils/functions": "^2.3.0",
+    "@juan-utils/functions": "^2.4.0",
     "@juan-utils/structures": "^2.4.1",
     "juanform": "^2.3.4",
     "react": "^16.12.0",
