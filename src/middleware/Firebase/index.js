@@ -119,10 +119,7 @@ const Firebase = (() => {
     }
     return {
         auth: getAuth,
-        database: IO(database),
-        detachListeners(path){
-            database().ref(path).off();
-        }
+        database: IO(database)
     }
 })()
 
