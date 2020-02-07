@@ -6,23 +6,36 @@ import WideView from "./WideView";
 import NarrowView from "./NarrowView";
 
 const NavbarStyled = styled.div`
-	display: grid;
-	${props =>
-		props.wide ? "grid-template-columns: 3fr 10fr" : "grid-template-columns: 1fr 3fr 1fr"};
-	background-color: ${Colors.Black.hexString()};
-	position: fixed;
-	width: 100%;
-	min-height: 64px;
-	max-height: 64px;
-	color: ${Colors.White.hexString()};
-	font-weight: normal;
-	padding: 8px;
-`;
+    display: grid;
+    ${ props =>
+        props.wide ?
+            "grid-template-columns: 3fr 10fr":
+            "grid-template-columns: 1fr 3fr 1fr"
+    };
+    background-color: ${Colors.Black.hexString()};
+    position: fixed;
+    z-index:1;
+    width: 100%;
+    min-height: 64px;
+    max-height: 64px;
+    color: ${Colors.White.hexString()};
+    font-weight: normal;
+    padding: 8px;
+`
 
 const Navbar = () => {
-	const device = useDevice();
-	const laptop = isLaptop(device);
-	return <NavbarStyled wide={laptop}>{laptop ? <WideView /> : <NarrowView />}</NavbarStyled>;
-};
+    const device = useDevice();
+    const laptop = isLaptop(device)
+    return (
+        <NavbarStyled wide={laptop}>
+            {
+                laptop ?
+                <WideView />
+                :
+                <NarrowView />
+            }
+        </NavbarStyled>
+    )
+}
 
-export default Navbar;
+export default Navbar
