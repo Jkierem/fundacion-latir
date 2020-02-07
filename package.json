@@ -24,7 +24,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint": "prettier --config ./.prettierrc --write \"**/*.js\"",
-		"lint:check": "prettier --check \"**/*.js\""
+		"lint:check": "prettier --config ./.prettierrc --check \"**/*.js\""
 	},
 	"eslintConfig": {
 		"extends": "react-app"
