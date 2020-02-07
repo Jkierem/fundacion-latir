@@ -1,5 +1,5 @@
-import { useDebugValue } from 'react';
-import useWindowSize from '../useWindowSize';
+import { useDebugValue } from "react";
+import useWindowSize from "../useWindowSize";
 
 /**
  * @typedef {("Mobile"|"Tablet"|"Laptop")} Device
@@ -7,40 +7,40 @@ import useWindowSize from '../useWindowSize';
  * @returns {Device} Device
  * @description Based on the received width, returns the type of device
  */
-export const getDevice = (width) => {
-    if( width < 426 ){
-        return Devices.Mobile;
-    } else if( width >= 426 && width < 1024 ){
-        return Devices.Tablet
-    } else {
-        return Devices.Laptop
-    }
-}
+export const getDevice = width => {
+	if (width < 426) {
+		return Devices.Mobile;
+	} else if (width >= 426 && width < 1024) {
+		return Devices.Tablet;
+	} else {
+		return Devices.Laptop;
+	}
+};
 
 const Devices = {
-    Mobile: "Mobile",
-    Tablet: "Tablet",
-    Laptop: "Laptop",
-}
+	Mobile: "Mobile",
+	Tablet: "Tablet",
+	Laptop: "Laptop",
+};
 
 /**
  * @param {string} device
  * @returns {boolean} is string equal to Mobile
  * @description verifies if received string is equal to "Mobile"
  */
-export const isMobile = (device) => Devices.Mobile === device
+export const isMobile = device => Devices.Mobile === device;
 /**
  * @param {string} device
  * @returns {boolean} is string equal to Tablet
  * @description verifies if received string is equal to "Tablet"
  */
-export const isTablet = (device) => Devices.Tablet === device
+export const isTablet = device => Devices.Tablet === device;
 /**
  * @param {string} device
  * @returns {boolean} is string equal to Laptop
  * @description verifies if received string is equal to "Laptop"
  */
-export const isLaptop = (device) => Devices.Laptop === device
+export const isLaptop = device => Devices.Laptop === device;
 
 /**
  * @typedef {("Mobile"|"Tablet"|"Laptop")} Device
@@ -48,10 +48,10 @@ export const isLaptop = (device) => Devices.Laptop === device
  * @description returns the device based on window size. Updates on window resize
  */
 const useDevice = () => {
-    const [ width ] = useWindowSize();
-    const dev = getDevice(width)
-    useDebugValue(dev)
-    return dev
-}
+	const [width] = useWindowSize();
+	const dev = getDevice(width);
+	useDebugValue(dev);
+	return dev;
+};
 
-export default useDevice
+export default useDevice;

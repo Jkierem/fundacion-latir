@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Accountability = (props) => {
-  return(
-    <div>
-        Accountability
-    </div>
-  )
-}
+const Accountability = props => {
+	return <div>Accountability</div>;
+};
 
 export default Accountability;

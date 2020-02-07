@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Allies = (props) => {
-  return(
-    <div>
-        Allies
-    </div>
-  )
-}
+const Allies = props => {
+	return <div>Allies</div>;
+};
 
 export default Allies;

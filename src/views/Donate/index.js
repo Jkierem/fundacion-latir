@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Donate = (props) => {
-  return(
-    <div>
-        Donate
-    </div>
-  )
-}
+const Donate = props => {
+	return <div>Donate</div>;
+};
 
 export default Donate;
