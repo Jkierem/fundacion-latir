@@ -10,18 +10,7 @@ const StyledImg = styled.div`
   overflow:hidden;
   width: 300px;
   height: 500px;
-  ${ props =>{  switch(props.grid){
-                  case "img1":
-                    return 'grid-area: img1;'
-                  case "img2":
-                    return 'grid-area: img2;'
-                  case "img3":
-                    return 'grid-area: img3;'
-                  case "img4":
-                    return 'grid-area: img4;'
-                }
-             }
-  }
+  grid-area: ${props => props.area};
 `;
 
 
@@ -36,10 +25,6 @@ const Content = styled.div`
   background-color:rgba(200,200,200,0.5);
   width: 300px;
   height: 500px;;
-  -webkit-transition: all 400ms ease-out;
-  -moz-transition: all 400ms ease-out;
-  -o-transition: all 400ms ease-out;
-  -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
   text-align:center;
   ${StyledImg}:hover & {
@@ -60,9 +45,9 @@ const StyledText = styled.div`
   }
 `;
 
-const HoverImage = ({ grid, src, text }) => {
+const HoverImage = ({ area, src, text }) => {
   return(
-    <StyledImg grid = {grid} >
+    <StyledImg area = {area} >
         <img src= {src} alt="img" />
         <Content>
           <StyledText>{text}</StyledText>

@@ -31,10 +31,10 @@ const NarrowView = (props) => {
   return(
     <StyledContainer>
     <Title>Para lograrlo, LATIR guia su trabajo a partir de 4 Areas</Title>
-      <HoverImage grid = "img1" src = 'https://picsum.photos/300/500' text = 'Lorem1 ipsum dolor sit amet, consectetur adipiscing elit.'/>
-      <HoverImage grid = "img2" src = 'https://picsum.photos/300/500' text = 'Lorem1 ipsum dolor sit amet, consectetur adipiscing elit.'/>
-      <HoverImage grid = "img3" src = 'https://picsum.photos/300/500' text = 'Lorem1 ipsum dolor sit amet, consectetur adipiscing elit.'/>
-      <HoverImage grid = "img4" src = 'https://picsum.photos/300/500' text = 'Lorem1 ipsum dolor sit amet, consectetur adipiscing elit.'/>
+      <HoverImage area = "img1" src = "https://picsum.photos/300/500" text = "Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."/>
+      <HoverImage area = "img2" src = "https://picsum.photos/300/500" text = "Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."/>
+      <HoverImage area = "img3" src = "https://picsum.photos/300/500" text = "Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."/>
+      <HoverImage area = "img4" src = "https://picsum.photos/300/500" text = "Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."/>
     </StyledContainer>
   )
 
