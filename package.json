@@ -7,6 +7,7 @@
     "@juan-utils/functions": "^2.4.0",
     "@juan-utils/structures": "^2.4.1",
     "juanform": "^2.3.4",
+    "firebase": "^7.8.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
