@@ -27,7 +27,7 @@ const ViewPlaceholder = props => {
 						history.replace("/");
 					}}
 				>
-					Regresar a Inicio
+					Regresar al inicio
 				</Button>
 			</Content>
 		</Section>
