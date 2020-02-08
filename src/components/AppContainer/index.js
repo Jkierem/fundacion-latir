@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const Content = styled.main`
 	width: 100%;
@@ -18,6 +19,7 @@ const AppContainer = props => {
 		<Container>
 			<Navbar />
 			<Content>{props.children}</Content>
+			<Footer />
 		</Container>
 	);
 };
