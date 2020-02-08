@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Workshops = (props) => {
-  return(
-    <div>
-      Workshops
-    </div>
-  )
-}
+const Workshops = props => {
+	return <div>Workshops</div>;
+};
 
 export default Workshops;

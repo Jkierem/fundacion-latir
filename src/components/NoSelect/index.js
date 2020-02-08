@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const NoSelect = styled.div`
-    user-select: none;
-`
+	user-select: none;
+`;
 
-export default NoSelect
+export default NoSelect;

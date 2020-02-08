@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const HowToParticipate = (props) => {
-  return(
-    <div>
-        HowToParticipate
-    </div>
-  )
-}
+const HowToParticipate = props => {
+	return <div>HowToParticipate</div>;
+};
 
 export default HowToParticipate;
