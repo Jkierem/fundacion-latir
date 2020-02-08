@@ -16,6 +16,7 @@ const StyledButton = styled.button`
 	border: none;
 	outline: none;
 	cursor: pointer;
+	width: ${props => props.width || "auto"};
 
 	color: ${Colors.White.hexString};
 	font-size: ${Fonts.SizeValues.Normal};
