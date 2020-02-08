@@ -9,3 +9,4 @@ export { default as Link } from "./Link";
 export { default as Navbar } from "./Navbar";
 export { default as NoSelect } from "./NoSelect";
 export { default as Section } from "./Section";
+export { default as ViewPlaceholder } from "./ViewPlaceholder";

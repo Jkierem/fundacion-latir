@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { HoverImage } from "../../../../components";
 
-import gestion from "../../../../resources/images/home/1_gestion_del_conocimiento.png";
-import acompanamiento from "../../../../resources/images/home/2_acompanamiento_situado.png";
-import incidencia from "../../../../resources/images/home/3_incidencia.png";
-import desarrollo from "../../../../resources/images/home/4_desarrollo_institucional.png";
+import gestion from "../../../../resources/images/whatis/1_gestion_del_conocimiento.png";
+import acompanamiento from "../../../../resources/images/whatis/2_acompanamiento_situado.png";
+import incidencia from "../../../../resources/images/whatis/3_incidencia.png";
+import desarrollo from "../../../../resources/images/whatis/4_desarrollo_institucional.png";
 import Colors from "../../../../utils/colors";
 
 const HoverConstraint = styled.figure`

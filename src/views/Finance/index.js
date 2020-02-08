@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const Finance = props => {
-	return <div>Finance</div>;
+	return <ViewPlaceholder />;
 };
 
 export default Finance;

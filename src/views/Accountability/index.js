@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const Accountability = props => {
-	return <div>Accountability</div>;
+	return <ViewPlaceholder />;
 };
 
 export default Accountability;
