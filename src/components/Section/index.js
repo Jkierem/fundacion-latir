@@ -18,9 +18,9 @@ const SectionStyled = styled.section`
  * @returns {JSX.Element} anchor html tag
  */
 const Section = ({ fullscreen, id, children }) => (
-  <SectionStyled fullscreen={fullscreen} id={id}>
-    {children}
-  </SectionStyled>
-)
+	<SectionStyled fullscreen={fullscreen} id={id}>
+		{children}
+	</SectionStyled>
+);
 
 export default Section;
