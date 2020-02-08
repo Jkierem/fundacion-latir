@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Fonts from "../../utils/fonts";
+import Colors from "../../utils/colors";
 
 const StyledImg = styled.div`
 	display: flex;
@@ -11,15 +12,19 @@ const StyledImg = styled.div`
 	height: 100%;
 	justify-content: center;
 	align-items: center;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-image: url(${props => props.src});
 	grid-area: ${props => props.area};
 `;
 
 const Content = styled.div`
 	position: absolute;
-	background-color: rgba(200, 200, 200, 0.8);
+	background-color: rgba(
+		${props => (props.color || Colors.Opaque).rgb().join(",")},
+		${props => props.opacity || "0.9"}
+	);
 	opacity: 0;
 	width: 100%;
 	height: 100%;
@@ -54,11 +59,11 @@ const Img = styled.img`
 	opacity: 0;
 `;
 
-const HoverImage = ({ area, src, text, alt, ...rest }) => {
+const HoverImage = ({ area, src, text, alt, color, ...rest }) => {
 	return (
 		<StyledImg area={area} src={src} {...rest}>
 			<Img src={src} alt={alt} />
-			<Content>
+			<Content color={color}>
 				<StyledText>{text}</StyledText>
 			</Content>
 		</StyledImg>
