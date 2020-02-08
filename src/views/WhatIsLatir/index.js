@@ -4,7 +4,6 @@ import Areas from './Areas'
 const WhatIsLatir = (props) => {
   return(
     <div>
-      WhatIsLatir
       <Areas />
     </div>
   )
