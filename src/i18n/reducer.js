@@ -11,6 +11,7 @@ const reducer = (state = initial, action = {}) => {
 			return {
 				...state,
 				ready: true,
+				language: action.payload,
 			};
 		case CHANGE_LANG:
 			return {
