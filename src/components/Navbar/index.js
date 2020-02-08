@@ -11,6 +11,7 @@ const NavbarStyled = styled.div`
 		props.wide ? "grid-template-columns: 3fr 10fr" : "grid-template-columns: 1fr 3fr 1fr"};
 	background-color: ${Colors.Black.hexString()};
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	min-height: 64px;
 	max-height: 64px;

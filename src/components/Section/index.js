@@ -17,6 +17,10 @@ const SectionStyled = styled.section`
  * @description A Section element that represents a section of a view. The fullscreen prop tells whether the component should occupy the whole screen or not.
  * @returns {JSX.Element} anchor html tag
  */
-const Section = ({ fullscreen, id }) => <SectionStyled fullscreen={fullscreen} id={id} />;
+const Section = ({ fullscreen, id, children }) => (
+	<SectionStyled fullscreen={fullscreen} id={id}>
+		{children}
+	</SectionStyled>
+);
 
 export default Section;
