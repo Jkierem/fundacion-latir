@@ -23,15 +23,21 @@ const WideLogoContainer = styled.header`
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: row;
-	font-weight: bold;
+	font-weight: normal;
+	font-family: QuinoaRound;
 	color: ${Colors.Primary.hexString()};
 	cursor: pointer;
 	user-select: none;
 `;
 
+const LogoTitle = styled.h2`
+	margin-left: 16px;
+	font-size: 1.7em;
+`;
+
 const Links = () => (
 	<LinkContainer>
-		<Link to="/what-is-latir">¿Qué es Latir?</Link>
+		<Link to="/what-is-latir">¿Qué es LATIR?</Link>
 		<NoSelect>|</NoSelect>
 		<Link to="/our-projects">Nuestros Proyectos</Link>
 		<NoSelect>|</NoSelect>
@@ -49,7 +55,7 @@ const WideLogo = ({ onClick = identity }) => {
 	return (
 		<WideLogoContainer onClick={onClick}>
 			<Icon src={logo} alt="logo" />
-			<h2>Fundación Latir</h2>
+			<LogoTitle>Fundación LATIR</LogoTitle>
 		</WideLogoContainer>
 	);
 };

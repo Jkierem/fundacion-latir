@@ -26,7 +26,7 @@ const NarrowView = props => {
 	return (
 		<StyledContainer>
 			<TitleContainer>
-				<PaddedTitle>Para lograrlo, LATIR guia su trabajo a partir de 4 Areas</PaddedTitle>
+				<PaddedTitle>Para lograrlo, LATIR guía su trabajo a partir de 4 áreas</PaddedTitle>
 			</TitleContainer>
 			<Images />
 		</StyledContainer>

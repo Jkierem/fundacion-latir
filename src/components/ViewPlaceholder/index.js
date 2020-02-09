@@ -21,13 +21,13 @@ const ViewPlaceholder = props => {
 		<Section fullscreen>
 			<Content>
 				<Icon src={logo} size={"huge"} />
-				<h1>Lo sentimos. Esta pagina esta en contruccion</h1>
+				<h1>Esta página está en construcción. ¡Conócela pronto!</h1>
 				<Button
 					onClick={() => {
-						history.replace("/");
+						history.goBack();
 					}}
 				>
-					Regresar al inicio
+					Regresar
 				</Button>
 			</Content>
 		</Section>

@@ -19,7 +19,7 @@ const WideView = props => {
 	return (
 		<StyledContainer>
 			<TitleContainer>
-				<h1>Para lograrlo, LATIR guia su trabajo a partir de 4 Areas</h1>
+				<h1>Para lograrlo, LATIR guía su trabajo a partir de 4 áreas</h1>
 			</TitleContainer>
 			<Images />
 		</StyledContainer>
