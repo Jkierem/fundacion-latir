@@ -1,35 +1,35 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "static/png/logo16x16",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "static/png/logo32x32",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "static/png/logo64x64",
-      "sizes": "64x64",
-      "type": "image/png"
-    },
-    {
-      "src": "static/png/logo128x128",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "static/png/favicon.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+	"short_name": "LATIR",
+	"name": "Fundacion LATIR",
+	"icons": [
+		{
+			"src": "static/png/logo16x16",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "static/png/logo32x32",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "static/png/logo64x64",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "static/png/logo128x128",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "static/png/favicon.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
 }

@@ -2,7 +2,7 @@
 	"name": "fundacion-latir",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "fundacionlatir.org",
+	"homepage": "https://fundacionlatir.org",
 	"dependencies": {
 		"@juan-utils/functions": "^2.4.0",
 		"@juan-utils/structures": "^2.4.1",
