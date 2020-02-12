@@ -29,6 +29,7 @@ const StyleImage = styled.div`
 `
 const ActionButton = styled.a`
   width: 90%;
+  text-decoration: none;
   border-radius: 5px;
   display: flex;
   align-items: center;
