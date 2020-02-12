@@ -11,3 +11,4 @@ export { default as NoSelect } from "./NoSelect";
 export { default as Section } from "./Section";
 export { default as ValueItem } from "./ValueItem";
 export { default as ViewPlaceholder } from "./ViewPlaceholder";
+export { default as WhatIsLatirComponent } from './WhatIsLatirComponent';
