@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const Gallery = props => {
-	return <div>Gallery</div>;
+	return <ViewPlaceholder />;
 };
 
 export default Gallery;

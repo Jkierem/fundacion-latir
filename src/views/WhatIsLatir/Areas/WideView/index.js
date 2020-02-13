@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TitleContainer from "../TitleContainer";
-import { HoverImage } from "../../../../components";
+import Images from "../Images";
 
 const StyledContainer = styled.div`
 	display: grid;
@@ -15,48 +15,13 @@ const StyledContainer = styled.div`
 	width: 100%;
 `;
 
-const HoverConstraint = styled.figure`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-`;
-
 const WideView = props => {
 	return (
 		<StyledContainer>
 			<TitleContainer>
-				<h1>Para lograrlo, LATIR guia su trabajo a partir de 4 Areas</h1>
+				<h1>Para lograrlo, LATIR guía su trabajo a partir de 4 áreas</h1>
 			</TitleContainer>
-			<HoverConstraint>
-				<HoverImage
-					area="img1"
-					src="https://picsum.photos/1000/1000"
-					text="Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."
-				/>
-			</HoverConstraint>
-			<HoverConstraint>
-				<HoverImage
-					area="img2"
-					src="https://picsum.photos/1000/1000"
-					text="Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."
-				/>
-			</HoverConstraint>
-			<HoverConstraint>
-				<HoverImage
-					area="img3"
-					src="https://picsum.photos/1000/1000"
-					text="Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."
-				/>
-			</HoverConstraint>
-			<HoverConstraint>
-				<HoverImage
-					area="img4"
-					src="https://picsum.photos/1000/1000"
-					text="Lorem1 ipsum dolor sit amet, consectetur adipiscing elit."
-				/>
-			</HoverConstraint>
+			<Images />
 		</StyledContainer>
 	);
 };

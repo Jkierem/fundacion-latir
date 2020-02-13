@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const HowToParticipate = props => {
-	return <div>HowToParticipate</div>;
+	return <ViewPlaceholder />;
 };
 
 export default HowToParticipate;

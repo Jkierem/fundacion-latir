@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const OurProjects = props => {
-	return <div>OurProjects</div>;
+	return <ViewPlaceholder />;
 };
 
 export default OurProjects;

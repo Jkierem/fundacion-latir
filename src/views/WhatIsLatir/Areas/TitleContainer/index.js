@@ -9,6 +9,7 @@ const TitleContainer = styled.header`
 	width: 100%;
 	height: 100%;
 	align-content: center;
+	padding: ${props => props.padding || "none"};
 `;
 
 export default TitleContainer;

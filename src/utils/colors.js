@@ -128,6 +128,7 @@ const getLightColorHex = options => compose(propApply("hexString", []), pickLigh
 export const RawColors = {
 	Black: Color(30, 37, 41),
 	White: Color(255, 255, 255),
+	OpaqueWhite: Color(200, 200, 200),
 	LightGreen: Color(75, 170, 155),
 	DarkGreen: Color(53, 131, 119),
 	LightPurple: Color(204, 119, 146),
@@ -136,11 +137,16 @@ export const RawColors = {
 	DarkRed: Color(161, 54, 32),
 	LightGray: Color(200, 200, 200),
 	DarkGray: Color(97, 97, 97),
+	PastelOrange: Color(200, 100, 20),
+	PastelGreen: Color(100, 200, 100),
+	PastelViolet: Color(200, 100, 200),
+	PastelYellow: Color(200, 200, 100),
 };
 
 const Colors = {
 	Black: RawColors.Black,
 	White: RawColors.White,
+	Opaque: RawColors.OpaqueWhite,
 	Gray: TwoColor({
 		Light: RawColors.LightGray,
 		Dark: RawColors.DarkGray,
@@ -157,6 +163,12 @@ const Colors = {
 		Light: RawColors.BrightRed,
 		Dark: RawColors.DarkRed,
 	}),
+	Pastel: {
+		Orange: RawColors.PastelOrange,
+		Green: RawColors.PastelGreen,
+		Violet: RawColors.PastelViolet,
+		Yellow: RawColors.PastelYellow,
+	},
 	Themes,
 	Modes,
 	pickColor,

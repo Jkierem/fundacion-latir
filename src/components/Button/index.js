@@ -12,7 +12,7 @@ const StyledButton = styled.button`
 	align-items: center;
 	justify-content: center;
 	padding: 0.8em;
-	margin: 24px;
+	margin: ${props => (props.compact ? "6px" : "24px")};
 	border: none;
 	outline: none;
 	cursor: pointer;

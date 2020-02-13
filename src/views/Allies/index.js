@@ -1,7 +1,8 @@
 import React from "react";
+import { ViewPlaceholder } from "../../components";
 
 const Allies = props => {
-	return <div>Allies</div>;
+	return <ViewPlaceholder />;
 };
 
 export default Allies;
