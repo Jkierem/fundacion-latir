@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Section from "../../../components/Section";
 import { Button } from "../../../components";
+import Fonts from "../../../utils/fonts";
 import { useDevice, isLaptop } from "../../../hooks";
 
 const Base = styled.div`
@@ -52,13 +53,13 @@ const Column = styled.div`
 `;
 
 const ReferenceContainer = styled.sup`
-	font-size: small;
+	font-size: ${Fonts.SizeValues.Small};
 	vertical-align: super;
 `;
 
 const ReferenceInfoContainer = styled.p`
 	align-self: flex-start;
-	font-size: small;
+	font-size: ${Fonts.SizeValues.Small};
 `;
 
 const OurProjectsToday = () => {
@@ -70,20 +71,20 @@ const OurProjectsToday = () => {
 				<TitleContainer>
 					<h2>Nuestros proyectos hoy</h2>
 				</TitleContainer>
-				<TextContainer size="normal" color="black" laptop={laptop}>
+				<TextContainer size={Fonts.SizeValues.Normal} color="black" laptop={laptop}>
 					<p>
 						A 2016, Colombia es el séptimo país más desigual del mundo.
 						<ReferenceContainer>1</ReferenceContainer>
 					</p>
 				</TextContainer>
-				<TextContainer size="normal" color="black" laptop={laptop}>
+				<TextContainer size={Fonts.SizeValues.Normal} color="black" laptop={laptop}>
 					<p>
 						El derecho de las personas a una vida en condiciones de dignidad se ve fuertemente
 						vulnerado, y su posibilidad de elegir el camino que sueñan se trunca en medio de un
 						contexto difícil.
 					</p>
 				</TextContainer>
-				<TextContainer size="normal" color="black" laptop={laptop}>
+				<TextContainer size={Fonts.SizeValues.Normal} color="black" laptop={laptop}>
 					<p>
 						Para atender esta situación soñamos gran cantidad de proyectos, de los cuales hoy
 						implementamos dos:
@@ -95,7 +96,7 @@ const OurProjectsToday = () => {
 						<TitleContainer>
 							<h3>Cuentos a la obra</h3>
 						</TitleContainer>
-						<TextContainer size="normal" color="black" laptop={laptop}>
+						<TextContainer size={Fonts.SizeValues.Normal} color="black" laptop={laptop}>
 							<p>Por el derecho de niños, niñas y adolecentes a una educación de calidad.</p>
 						</TextContainer>
 					</Column>
@@ -103,7 +104,7 @@ const OurProjectsToday = () => {
 						<TitleContainer>
 							<h3>Pasa la paz</h3>
 						</TitleContainer>
-						<TextContainer size="normal" color="black" laptop={laptop}>
+						<TextContainer size={Fonts.SizeValues.Normal} color="black" laptop={laptop}>
 							<p>Para fortalecer las habilidades sociales hacia la construcción de paz.</p>
 						</TextContainer>
 					</Column>
