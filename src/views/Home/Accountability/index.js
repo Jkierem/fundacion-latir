@@ -1,34 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import Section from "../../../components/Section";
-import Icon from "../../../components/Icon";
-import { Button } from "../../../components";
-import Fonts from "../../../utils/fonts";
+import { Button, Icon, Section } from "../../../components";
+import Item from "./Item";
+import TitleContainer from "./TitleContainer";
+
 import amaLogo from "../../../resources/images/home/amalogo.jpg";
 import armonicosLogo from "../../../resources/images/home/espaciosarmonicoslogo.svg";
 
-const TitleContainer = styled.header`
-	color: gray;
-	font-size: ${Fonts.SizeValues.Huge};
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	grid-area: title;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	align-content: center;
-`;
-
-const TextContainer = styled.div`
-	width: auto;
-	color: black;
-	font-size: ${Fonts.SizeValues.Normal};
-	text-align: center;
-	padding: 5%;
-`;
-
 const ItemsContainer = styled.div`
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-around;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+`;
+
+const NetworkingGalleryContainer = styled.div`
+	padding: 10% 0;
 	grid-area: items;
 	width: 100%;
 	height: auto;
@@ -41,66 +33,18 @@ const ItemsContainer = styled.div`
 	box-sizing: border-box;
 `;
 
-const ItemContainer = styled.div`
-	position: relative;
-	flex-wrap: flex;
-	margin: 0 2%;
-	flex-basis: 280px;
-	flex-grow: 0;
-	flex-shrink: 0;
-`;
-const StyledItem = styled.div`
-	text-align: center;
-	align-items: center;
-	justify-content: space-around;
-`;
-const Base = styled.div`
-	display: flex;
-	flex-direction: ${props => props.direction || "column"};
-	justify-content: ${props => props.justify || "center"};
-	align-items: ${props => props.align || "center"};
-	font-size: initial;
-`;
-const NetworkingGalleryContainer = styled(Base)`
-	padding: 10% 0;
-	/* position: relative;
-	height: auto;
-	box-sizing: border-box; */
-	grid-area: items;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: baseline;
-	align-content: space-around;
-	flex-wrap: wrap;
-	box-sizing: border-box;
-`;
 const NetworkingContainer = styled.div`
 	position: relative;
 	flex-wrap: flex;
+	margin: 16px;
 `;
+
 const ButtonContainer = styled.div`
 	display: flex;
 	position: relative;
 	box-sizing: border-box;
 	justify-content: center;
 `;
-const Item = ({ title, text }) => {
-	return (
-		<ItemContainer>
-			<StyledItem>
-				<TitleContainer>
-					<h2>{title}</h2>
-				</TitleContainer>
-				<TextContainer>
-					<p>{text}</p>
-				</TextContainer>
-			</StyledItem>
-		</ItemContainer>
-	);
-};
 
 const Accountability = () => {
 	return (
@@ -119,8 +63,8 @@ const Accountability = () => {
 						<h2>Redes y Organizaciones Asociadas</h2>
 					</TitleContainer>
 					<ItemsContainer>
-						<Icon src={amaLogo} alt={"Fundación AMA"} size={"huge"} />
-						<Icon src={armonicosLogo} alt={"Espacios Armónicos"} size={"huge"} />
+						<Icon src={amaLogo} alt={"Fundación AMA"} size={"big"} />
+						<Icon src={armonicosLogo} alt={"Espacios Armónicos"} size={"big"} />
 					</ItemsContainer>
 				</NetworkingContainer>
 				<NetworkingContainer>
