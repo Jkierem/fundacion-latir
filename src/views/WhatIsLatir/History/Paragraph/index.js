@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Fonts from "../../../../utils/fonts";
 
 const ParagraphPosition = styled.div`
-	grid-area: 2 / 2 / 5 / 5;
+	grid-area: 2 / 2 / 4 / 5;
 	font-size: ${Fonts.SizeValues.Huge};
 	text-align: center;
 `;
