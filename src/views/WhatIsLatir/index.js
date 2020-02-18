@@ -4,14 +4,12 @@ import MissionVisionValues from "./MissionVisionValues";
 
 import styled from "styled-components";
 import Splash from './Splash'
-import NarrowView from './Splash/NarrowView'
-import WideView from './Splash/WideView'
  
 
  const WhatIsLatir = (props) => {
  return(
    <div>
-     <WideView/>
+     <Splash/>
    </div>
  )
 }
