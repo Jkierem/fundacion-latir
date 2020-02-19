@@ -1,17 +1,16 @@
 import React from "react";
 import Areas from "./Areas";
 import MissionVisionValues from "./MissionVisionValues";
+import Splash from "./Splash";
 
-import styled from "styled-components";
-import Splash from './Splash'
- 
+const WhatIsLatir = props => {
+	return (
+		<div>
+			<Splash />
+			<Areas />
+			<MissionVisionValues />
+		</div>
+	);
+};
 
- const WhatIsLatir = (props) => {
- return(
-   <div>
-     <Splash/>
-   </div>
- )
-}
- 
 export default WhatIsLatir;
