@@ -3,6 +3,7 @@ import Areas from "./Areas";
 import MissionVisionValues from "./MissionVisionValues";
 import Splash from "./Splash";
 import History from "./History";
+import WhereHaveBeen from "./WhereHaveBeen";
 
 const WhatIsLatir = props => {
 	return (
@@ -11,6 +12,7 @@ const WhatIsLatir = props => {
 			<Areas />
 			<MissionVisionValues />
 			<History />
+			<WhereHaveBeen />
 		</div>
 	);
 };
