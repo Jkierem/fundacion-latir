@@ -3,11 +3,10 @@ import styled from "styled-components";
 import Fonts from "../../../../utils/fonts";
 const DescriptionContainer = styled.div`
 	grid-area: 2 / 3 / 3 / 6;
-	text-align: center;
+	text-align: left;
 	grid-area: title;
 	justify-content: center;
-	font-size: ${Fonts.SizeValues.Big};
-	padding: 3% 25%;
+	font-size: ${Fonts.SizeValues.Huge};
 `;
 
 const Description = () => {

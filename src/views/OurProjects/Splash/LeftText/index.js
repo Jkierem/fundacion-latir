@@ -4,7 +4,7 @@ import Fonts from "../../../../utils/fonts";
 
 const LeftContainer = styled.div`
 	display: grid;
-	grid-template-columns: 0.4fr 1fr 0.4fr 1fr 0.4fr;
+	grid-template-columns: 0.4fr 1fr 0.4fr 0.8fr 0.4fr;
 	grid-template-rows: repeat(2, 0.1fr) 1fr 0.1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 20px;
@@ -31,6 +31,15 @@ const ParagraphContainer = styled.div`
 	justify-content: center;
 `;
 
+/**
+ * @typedef {{
+ *  title: string;
+ *  src: string;
+ *  paragraph: string;
+ * }} LeftTextProps
+ * @param {LeftTextProps} props
+ * @description Container with left text for our proyects.
+ */
 function LeftText(Props) {
 	return (
 		<LeftContainer>
