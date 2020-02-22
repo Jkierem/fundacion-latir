@@ -1,8 +1,8 @@
 import React from "react";
-import { ViewPlaceholder } from "../../components";
+import Splash from "./Splash";
 
 const OurProjects = props => {
-	return <ViewPlaceholder />;
+	return <Splash />;
 };
 
 export default OurProjects;
