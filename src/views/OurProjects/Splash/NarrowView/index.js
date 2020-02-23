@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Description from "../Description";
 import Fonts from "../../../../utils/fonts";
 import DownText from "../DownText";
+import { Button } from "../../../../components";
 
 const NarrowViewContainer = styled.div`
 	display: grid;
@@ -24,6 +25,14 @@ const SentenceContainer = styled.div`
 	grid-area: title;
 	justify-content: center;
 	padding: 0% 10%;
+`;
+
+const ButtonGroupContainer = styled.div`
+	display: flex;
+	flex-direction: row | row-reverse | column |;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
 `;
 
 const NarrowView = () => {
@@ -55,6 +64,11 @@ const NarrowView = () => {
                 Sed venenatis nulla ut sollicitudin euismod. Nulla et pharetra lorem. Fusce aliquet ex vitae 
                 condimentum blandit. In dapibus."
 			/>
+			<ButtonGroupContainer>
+				<Button>Conoce Nuestro Impacto</Button>
+				<Button>Quiero Unirme</Button>
+				<Button>Quiero Donar</Button>
+			</ButtonGroupContainer>
 		</div>
 	);
 };
