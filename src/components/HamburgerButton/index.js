@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Colors from "../../utils/colors";
 import styled from "styled-components";
 import { identity } from "@juan-utils/functions";
@@ -38,18 +38,15 @@ const BarContainer = styled.div`
 `;
 
 const HamburgerButton = ({ onOpen = identity, onClose = identity, open }) => {
-	const [isOpen, setOpen] = useState(open || false);
-	const toggleOpen = () => setOpen(!isOpen);
 	const handleClick = e => {
-		toggleOpen();
-		isOpen ? onClose(e, isOpen) : onOpen(e, isOpen);
+		open ? onClose(e, open) : onOpen(e, open);
 	};
 
 	return (
 		<BarContainer onClick={handleClick}>
-			<Bar position="top" open={isOpen} />
-			<Bar position="mid" open={isOpen} />
-			<Bar position="bot" open={isOpen} />
+			<Bar position="top" open={open} />
+			<Bar position="mid" open={open} />
+			<Bar position="bot" open={open} />
 		</BarContainer>
 	);
 };
