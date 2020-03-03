@@ -1,8 +1,9 @@
 import React from "react";
 import { ViewPlaceholder } from "../../components";
+import FromWhere from "./FromWhere";
 
 const HowToParticipate = props => {
-	return <ViewPlaceholder />;
+	return <FromWhere />;
 };
 
 export default HowToParticipate;
