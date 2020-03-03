@@ -87,7 +87,8 @@ const Menu = ({ open, onClick }) => {
 
 const NarrowView = () => {
 	const history = useHistory();
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
+
 	const handleOpen = () => {
 		setOpen(true);
 	};
