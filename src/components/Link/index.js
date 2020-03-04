@@ -49,4 +49,7 @@ const Link = ({ to, children, text, replace, onClick }) => {
 	);
 };
 
+Link.Style = LinkWrapper;
+Link.InnerStyle = LinkStyle;
+
 export default Link;
