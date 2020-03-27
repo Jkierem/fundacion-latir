@@ -4,9 +4,9 @@ import Locations from "./Locations";
 
 const WhereHaveBeen = props => {
 	return (
-		<>
+		<Section id="places">
 			<Locations />
-		</>
+		</Section>
 	);
 };
 
