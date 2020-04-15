@@ -5,7 +5,7 @@ import Section from "../../../components/Section";
 import { Button } from "../../../components";
 
 import logo from "../../../resources/images/relogoslatir/512x512px_blanco.svg";
-import background from "../../../resources/images/home/splash.png";
+import background from "../../../resources/images/1_inicio/1_por_una_vida.jpg";
 import { useDevice, isLaptop } from "../../../hooks";
 
 const Base = styled.div`
