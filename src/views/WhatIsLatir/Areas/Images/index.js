@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { HoverImage } from "../../../../components";
-
-import gestion from "../../../../resources/images/whatis/1_gestion_del_conocimiento.png";
-import acompanamiento from "../../../../resources/images/whatis/2_acompanamiento_situado.png";
-import incidencia from "../../../../resources/images/whatis/3_incidencia.png";
-import desarrollo from "../../../../resources/images/whatis/4_desarrollo_institucional.png";
 import Colors from "../../../../utils/colors";
+
+import gestion from "../../../../resources/images/2_que_es_latir/1_gestion_del_conocimiento.jpg";
+import acompanamiento from "../../../../resources/images/2_que_es_latir/2_acompanamiento_situado.jpg";
+import incidencia from "../../../../resources/images/2_que_es_latir/3_incidencia.jpg";
+import desarrollo from "../../../../resources/images/2_que_es_latir/4_desarrollo_institucional.jpg";
 
 const HoverConstraint = styled.figure`
 	display: flex;

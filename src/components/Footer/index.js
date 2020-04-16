@@ -4,8 +4,8 @@ import Icon from "../Icon";
 import Colors from "../../utils/colors";
 
 import logo from "../../resources/images/relogoslatir/512x512px_blanco.svg";
-import facebook from "../../resources/images/facebook.png";
-import instagram from "../../resources/images/instagram.png";
+import facebook from "../../resources/images/third_party/facebook.png";
+import instagram from "../../resources/images/third_party/instagram.png";
 
 const Container = styled.footer`
 	display: flex;
