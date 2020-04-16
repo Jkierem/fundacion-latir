@@ -26,6 +26,10 @@ const Container = styled(Base)`
 	padding: 0 5%;
 `;
 
+const ElementsContainer = styled(Base)`
+	width: 45%;
+`;
+
 const ButtonContainer = styled(Base)`
 	align-items: center;
 	margin: ${props => (props.compact ? "0" : "24px 0")};
@@ -38,7 +42,31 @@ const TextContainer = styled(Base)`
 	text-align: ${props => props.textAlign || "center"};
 	margin: ${props => props.margin || "0"};
 	padding: 10% 0;
+	word-wrap: break-word;
 `;
+
+const SplashContent = () => {
+	return (
+		<>
+			<TextContainer margin="16px 0">
+				La integridad hace parte de nuestros valores, y con ella viven la autenticidad y
+				transparencia. Es por ello que la rendición de cuentas es un elemento fundamental para
+				nosotros en la construcción de un país que ofrezca condiciones de vida digna a su población
+			</TextContainer>
+			<ButtonContainer>
+				<Button compact width="100%">
+					Gestion Social e Impacto
+				</Button>
+				<Button compact width="100%">
+					Gestion Financiera
+				</Button>
+				<Button compact width="100%">
+					Principios para Rendicion de Cuentas
+				</Button>
+			</ButtonContainer>
+		</>
+	);
+};
 
 const Splash = () => {
 	const dev = useDevice();
@@ -47,49 +75,13 @@ const Splash = () => {
 		<Section id={"splash"} fullscreen>
 			{!laptop ? (
 				<Container laptop={laptop} align="center">
-					<TextContainer margin="16px 0">
-						<p>
-							La integridad hace parte de nuestros valores, y con ella viven la autenticidad y
-							transparencia. Es por ello que la rendición de cuentas es un elemento fundamental para
-							nosotros en la construcción de un país que ofrezca condiciones de vida digna a su
-							población
-						</p>
-					</TextContainer>
-					<ButtonContainer>
-						<Button compact width="100%">
-							Gestion Social e Impacto
-						</Button>
-						<Button compact width="100%">
-							Gestion Financiera
-						</Button>
-						<Button compact width="100%">
-							Principios para Rendicion de Cuentas
-						</Button>
-					</ButtonContainer>
+					<SplashContent />
 				</Container>
 			) : (
 				<Container align="flex-start">
-					<div direction="column" align="flex-start" compact>
-						<TextContainer margin="16px 0">
-							<p>La integridad hace parte de nuestros valores,</p>
-							<p>y con ella viven la autenticidad y transparencia.</p>
-							<p>Es por ello que la rendición de cuentas es un</p>
-							<p>elemento fundamental para nosotros en la</p>
-							<p>construcción de un país que ofrezca condiciones</p>
-							<p> de vida digna a su población</p>
-						</TextContainer>
-						<ButtonContainer padding="0 15%">
-							<Button compact width="100%">
-								Gestión Social e Impacto
-							</Button>
-							<Button compact width="100%">
-								Gestión Financiera
-							</Button>
-							<Button compact width="100%">
-								Principios para Rendición de Cuentas
-							</Button>
-						</ButtonContainer>
-					</div>
+					<ElementsContainer>
+						<SplashContent />
+					</ElementsContainer>
 				</Container>
 			)}
 		</Section>
