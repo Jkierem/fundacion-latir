@@ -55,10 +55,10 @@ const Splash = () => {
 					<TextContainer size="2em">Únete a LATIR</TextContainer>
 					<ButtonContainer>
 						<Button compact width="100%">
-							Voluntariado
+							Quiero Ser Voluntaria/o
 						</Button>
 						<Button compact width="100%">
-							Haz tu donación
+							Quiero Hacer Una Donación
 						</Button>
 					</ButtonContainer>
 				</Container>
@@ -75,10 +75,10 @@ const Splash = () => {
 						<TextContainer size="2em">Únete a LATIR</TextContainer>
 						<ButtonContainer>
 							<Button compact width="50%">
-								Voluntariado
+								Quiero Ser Voluntaria/o
 							</Button>
 							<Button compact width="50%">
-								Haz tu donación
+								Quiero Hacer Una Donación
 							</Button>
 						</ButtonContainer>
 					</ButtonContainer>
