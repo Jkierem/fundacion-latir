@@ -1,8 +1,12 @@
 import React from "react";
-import { ViewPlaceholder } from "../../components";
+import Splash from "./Splash";
 
 const Finance = props => {
-	return <ViewPlaceholder />;
+	return (
+		<>
+			<Splash />
+		</>
+	);
 };
 
 export default Finance;
