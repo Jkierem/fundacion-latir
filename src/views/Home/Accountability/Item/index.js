@@ -1,40 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-import TitleContainer from "../TitleContainer";
 import Fonts from "../../../../utils/fonts";
 
 const ItemContainer = styled.div`
 	position: relative;
-	margin: 0 2%;
+	margin: 3% 2%;
 	flex-basis: 280px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
 `;
 
 const TextContainer = styled.div`
 	width: auto;
 	color: black;
-	font-size: ${Fonts.SizeValues.Normal};
+	font-size: ${Fonts.SizeValues.Big};
 	text-align: center;
 	padding: 5%;
 `;
 
-const StyledItem = styled.div`
+const TitleContainer = styled.div`
+	width: auto;
+	color: black;
+	font-size: ${Fonts.SizeValues.Largest};
 	text-align: center;
-	align-items: center;
-	justify-content: space-around;
-	margin: 16px;
+	padding: 5%;
 `;
 
 const Item = ({ title, text }) => {
 	return (
 		<ItemContainer>
-			<StyledItem>
-				<TitleContainer>
-					<h2>{title}</h2>
-				</TitleContainer>
-				<TextContainer>
-					<p>{text}</p>
-				</TextContainer>
-			</StyledItem>
+			<TitleContainer>
+				<h2>{title}</h2>
+			</TitleContainer>
+			<TextContainer>
+				<p>{text}</p>
+			</TextContainer>
 		</ItemContainer>
 	);
 };

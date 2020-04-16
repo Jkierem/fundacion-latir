@@ -2,6 +2,8 @@ import React from "react";
 import Splash from "./Splash";
 import OurProjectsToday from "./OurProjectsToday";
 import Accountability from "./Accountability";
+import Gallery from "./Gallery";
+import Networking from "./Networking";
 
 const Home = props => {
 	return (
@@ -9,6 +11,8 @@ const Home = props => {
 			<Splash />
 			<OurProjectsToday />
 			<Accountability />
+			<Gallery />
+			<Networking />
 		</div>
 	);
 };
