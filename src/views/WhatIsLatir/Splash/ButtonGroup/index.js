@@ -3,12 +3,17 @@ import styled from "styled-components";
 import { Button } from "../../../../components";
 
 const StyledButton = styled.div`
-	grid-area: 4 / 3 / 5 / 6;
+	min-width: 200px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
+	padding: 16px;
+
+	@media only screen and (min-width: 768px) {
+		min-width: 35%;
+	}
 `;
 
 const Buttons = () => {
