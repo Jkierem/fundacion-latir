@@ -16,6 +16,9 @@ const Color = (r, g, b) => {
 		hexString() {
 			return "#" + [r, g, b].map(toHex).join("");
 		},
+		rgba(a) {
+			return `rgba(${r},${g},${b},${a})`;
+		},
 	};
 };
 
@@ -25,6 +28,7 @@ const TwoColor = ({ Light, Dark }) => {
 		rgbCss: Light.rgbCss,
 		hex: Light.hex,
 		hexString: Light.hexString,
+		rgba: Light.rgba,
 		Light,
 		Dark,
 	};
