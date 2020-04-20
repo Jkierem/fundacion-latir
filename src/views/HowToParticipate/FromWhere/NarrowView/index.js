@@ -14,6 +14,7 @@ const TitleContainer = styled.div`
 	grid-area: 1 / 2 / 2 / 3;
 	font-size: ${Fonts.SizeValues.Largest};
 	text-align: center;
+	padding-top: 10px;
 `;
 const SubTextContainer = styled.div`
 	grid-area: 4 / 2 / 5 / 3;
