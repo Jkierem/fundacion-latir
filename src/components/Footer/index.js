@@ -12,6 +12,7 @@ const Container = styled.footer`
 	padding: 16px;
 	background-color: ${Colors.Black.hexString};
 	justify-content: flex-start;
+	margin-top: auto;
 `;
 
 const IconLink = styled.a`

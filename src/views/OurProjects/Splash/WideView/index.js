@@ -6,9 +6,9 @@ import RightText from "../RightText";
 import LeftText from "../LeftText";
 import { Button } from "../../../../components";
 
-const WideContainer = styled.div`
-	display: flex;
+const WideContainer = styled.body`
 	flex-direction: column;
+	float: left;
 `;
 
 const SentenceContainer = styled.div`
@@ -45,15 +45,13 @@ const Button3 = styled.div`
 
 const WideView = () => {
 	return (
-		<div>
-			<WideContainer>
-				<DescriptionContainer>
-					<Description />
-				</DescriptionContainer>
-				<SentenceContainer>
-					!Esto apenas comienza y ya tenemos dos proyectos en accion¡
-				</SentenceContainer>
-			</WideContainer>
+		<WideContainer>
+			<DescriptionContainer>
+				<Description />
+			</DescriptionContainer>
+			<SentenceContainer>
+				!Esto apenas comienza y ya tenemos dos proyectos en accion¡
+			</SentenceContainer>
 			<LeftText
 				title="Cuentos a la Obra"
 				src="https://i.picsum.photos/id/132/1400/800.jpg"
@@ -83,7 +81,7 @@ const WideView = () => {
 					<Button>Quiero Donar</Button>
 				</Button3>
 			</ButtonGroupContainer>
-		</div>
+		</WideContainer>
 	);
 };
 
