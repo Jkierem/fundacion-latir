@@ -42,6 +42,7 @@ const PrincipalContainer = styled.div`
 	grid-template-rows: 0.1fr 0.2fr 0.1fr 1fr 0.1fr 0.2fr 0.05fr 0.1fr 0.05fr repeat(2, 0.2fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	float: left;
 `;
 
 function WideView(Props) {
