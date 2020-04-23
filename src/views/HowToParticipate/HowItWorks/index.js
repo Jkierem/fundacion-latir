@@ -11,7 +11,8 @@ const StyledTitle = styled.h1`
 	width: 100%;
 	padding-right: 10px;
 	padding-left: 10px;
-	margin: 5% 0;
+	margin-top: 4%;
+	margin-bottom: 3%;
 `;
 
 const HowItWorks = props => {

@@ -4,29 +4,34 @@ import styled from "styled-components";
 const StyledContainer = styled.div`
 	max-width: 600px;
 	padding-right: 60px;
-	padding-left: 80px;
 	padding-bottom: 60px;
 	margin: auto;
 `;
 
-const PaddedTitle = styled.h2`
+const PaddedTitle = styled.div`
+	font-size: 1.4em;
+	padding-left: 60px;
 	padding-bottom: 20px;
 	padding-top: 15px;
+`;
+const PaddedText = styled.p`
+	padding-left: 70px;
+	line-height: 130%;
 `;
 
 const ItemLink = ({ title, text, target, href, link }) => {
 	return (
 		<>
-			<li>
-				<PaddedTitle>{title}</PaddedTitle>
-			</li>
-			<p>
+			<PaddedTitle>
+				<li>{title}</li>
+			</PaddedTitle>
+			<PaddedText>
 				{text}{" "}
 				<a target={target} href={href}>
 					{" "}
 					{link}{" "}
 				</a>{" "}
-			</p>
+			</PaddedText>
 		</>
 	);
 };
@@ -34,10 +39,10 @@ const ItemLink = ({ title, text, target, href, link }) => {
 const Item = ({ title, text, src = "" }) => {
 	return (
 		<>
-			<li>
-				<PaddedTitle>{title}</PaddedTitle>
-			</li>
-			<p>{text}</p>
+			<PaddedTitle>
+				<li>{title}</li>
+			</PaddedTitle>
+			<PaddedText>{text}</PaddedText>
 		</>
 	);
 };
@@ -50,11 +55,11 @@ const ItemsContainer = () => {
 				text="Lo primero que privilegiamos es saber de ti aquello que nos quieras compartir sobre tus interes, gustos, los conocimientos que quieres poner al servicio y los cambios que sueñas inspirar. Para hello hemos diseñado el siguiente "
 				target="_blank"
 				href="tryit.asp?filename=trycss_text"
-				link="formulario"
+				link="formulario."
 			/>
 			<Item
 				title="Conécta con nuestro equipo de trabajo"
-				text="Una vez conocemos sobre ti y tus expectativas y reconocemos tu disponibilidad, te invitamos a conectar con el equipo de trabajo con el que aprenderás, aportarás y pondrás al sevicio de nuestra casusa toda tu creatividad Según el área a la cual te vincules, tendrás reuniones de trabajo semanales, quincenales o mensuales"
+				text="Una vez conocemos sobre ti y tus expectativas y reconocemos tu disponibilidad, te invitamos a conectar con el equipo de trabajo con el que aprenderás, aportarás y pondrás al sevicio de nuestra casusa toda tu creatividad Según el área a la cual te vincules, tendrás reuniones de trabajo semanales, quincenales o mensuales."
 			/>
 			<Item
 				title="Capacitémonos y entrenémonos"
