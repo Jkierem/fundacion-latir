@@ -22,7 +22,7 @@ const StyledButton = styled.div`
 
 const StyledDesc = styled.div`
 	text-align: center;
-	font-size: 150%;
+	font-size: 170%;
 	padding-right: 10%;
 	padding-left: 10%;
 	max-width: 550px;
@@ -31,7 +31,7 @@ const StyledDesc = styled.div`
 
 const WideView = props => {
 	return (
-		<Section fullscreen>
+		<Section id={"splash"} fullscreen>
 			<Content>
 				<StyledDesc>
 					Nuestro trabajo se inspira en las ideas, propuestas, sueños y acciones de nuesros

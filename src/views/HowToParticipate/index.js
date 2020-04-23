@@ -1,8 +1,8 @@
 import React from "react";
-import { ViewPlaceholder } from "../../components";
+import WideView from "./Splash";
 
 const HowToParticipate = props => {
-	return <ViewPlaceholder />;
+	return <WideView />;
 };
 
 export default HowToParticipate;
