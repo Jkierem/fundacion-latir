@@ -50,7 +50,7 @@ const WideView = () => {
 				<Description />
 			</DescriptionContainer>
 			<SentenceContainer>
-				!Esto apenas comienza y ya tenemos dos proyectos en accion¡
+				¡Esto apenas comienza y ya tenemos dos proyectos en accion!
 			</SentenceContainer>
 			<LeftText
 				title="Cuentos a la Obra"
