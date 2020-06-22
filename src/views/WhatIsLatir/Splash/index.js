@@ -16,7 +16,7 @@ const StyledWide = styled.div`
 
 const Splash = props => {
 	return (
-		<Section fullscreen id="splash">
+		<Section id="splash">
 			<StyledWide>
 				<Image />
 				<Description />

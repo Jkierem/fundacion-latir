@@ -4,6 +4,9 @@ import { Button, Section, Icon } from "../../../components";
 import { useHistory } from "react-router-dom";
 import Fonts from "../../../utils/fonts";
 
+import storiesGalleryImage from "../../../resources/images/1_inicio/6_galeria_de_historias.jpg";
+import toolsGalleryImage from "../../../resources/images/1_inicio/7_galeria_de_herramientas.png";
+
 const GalleriesContainer = styled.div`
 	width: 100%;
 	height: 100%;
@@ -49,13 +52,13 @@ const Gallery = () => {
 					<TitleContainer>
 						<h2>Galería de Herramientas</h2>
 					</TitleContainer>
-					<Icon src="https://picsum.photos/130/130" alt="Galería de Herramientas" size="huge" />
+					<Icon src={toolsGalleryImage} alt="Galería de Herramientas" size="huge" alignment="column" />
 				</GalleryContainer>
 				<GalleryContainer>
 					<TitleContainer>
 						<h2>Galería de Historias</h2>
 					</TitleContainer>
-					<Icon src="https://picsum.photos/130/130" alt="Galería de Historias" size="huge" />
+					<Icon src={storiesGalleryImage} alt="Galería de Historias" size="huge" alignment="column"/>
 				</GalleryContainer>
 			</GalleriesContainer>
 			<ButtonContainer>
