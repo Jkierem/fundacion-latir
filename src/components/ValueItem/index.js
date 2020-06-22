@@ -17,10 +17,10 @@ const MarginContainer = styled.div`
 	margin: 5% 0;
 `;
 
-const ValueItem = ({ area, src, title, text, alt = "auto-alt" }) => {
+const ValueItem = ({ area, src, title, text, alt = "auto-alt", imgProps }) => {
 	return (
 		<StyledValueItem area={area}>
-			<img src={src} alt={alt} />
+			<img src={src} alt={alt} {...imgProps} />
 			<MarginContainer>
 				<h2>{title}</h2>
 			</MarginContainer>

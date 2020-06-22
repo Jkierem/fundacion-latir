@@ -2,6 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { ValueItem } from "../../../../components";
 
+import coherencia from "../../../../resources/images/3_mision_vision_valores/coherencia.png";
+import compromiso from "../../../../resources/images/3_mision_vision_valores/compromiso.png";
+import cooperacion from "../../../../resources/images/3_mision_vision_valores/cooperacion.png";
+import creatividad from "../../../../resources/images/3_mision_vision_valores/creatividad.png";
+import gratitud from "../../../../resources/images/3_mision_vision_valores/gratitud.png";
+import integridad from "../../../../resources/images/3_mision_vision_valores/integridad.png";
+import proactividad from "../../../../resources/images/3_mision_vision_valores/proactividad.png";
+import vocacion from "../../../../resources/images/3_mision_vision_valores/vocacion.png";
+
 const ValuesTitle = styled.h1`
 	display: flex;
 	text-align: center;
@@ -35,9 +44,19 @@ const ValueItemContainer = styled.div`
 `;
 
 const Value = ({ src, title, text }) => {
+	const props = {
+		alt: title.toLowerCase(),
+		text,
+		title,
+		src,
+		imgProps: {
+			width: "auto",
+			height: "130px",
+		},
+	};
 	return (
 		<ValueItemContainer>
-			<ValueItem src={src} title={title} text={text} alt={title.toLowerCase()} />
+			<ValueItem {...props} />
 		</ValueItemContainer>
 	);
 };
@@ -48,42 +67,34 @@ const Values = () => {
 			<ValuesTitle>Valores</ValuesTitle>
 			<ValuesContainer>
 				<Value
-					src="https://picsum.photos/130/130"
+					src={integridad}
 					title="Integridad"
 					text="Nos relacionamos de manera auténtica y transparente"
 				/>
+				<Value src={coherencia} title="Coherencia" text="Reflejamos lo que predicamos" />
+				<Value src={proactividad} title="Proactividad" text="Hacemos que las cosas pasen" />
 				<Value
-					src="https://picsum.photos/130/130"
-					title="Coherencia"
-					text="Reflejamos lo que predicamos"
-				/>
-				<Value
-					src="https://picsum.photos/130/130"
-					title="Proactividad"
-					text="Hacemos que las cosas pasen"
-				/>
-				<Value
-					src="https://picsum.photos/130/130"
+					src={compromiso}
 					title="Compromiso"
 					text="Nos tomamos el tiempo necesario para hacer lo que genera el mayor bien posible"
 				/>
 				<Value
-					src="https://picsum.photos/130/130"
+					src={cooperacion}
 					title="Cooperación"
 					text="Nos complementamos para generar un mayor impacto con lo que hacemos"
 				/>
 				<Value
-					src="https://picsum.photos/130/130"
+					src={creatividad}
 					title="Creatividad"
 					text="Generamos nuevas ideas para producir soluciones originales y adecuadas"
 				/>
 				<Value
-					src="https://picsum.photos/130/130"
+					src={vocacion}
 					title="Vocación"
 					text="Nos une el deseo interior por servir y acompañar donde se necesita"
 				/>
 				<Value
-					src="https://picsum.photos/130/130"
+					src={gratitud}
 					title="Gratitud"
 					text="Expresamos nuestro aprecio y reconocimiento por aquellas personas y comunidades con quienes trabajamos, y a todos los que nos apoyan"
 				/>
