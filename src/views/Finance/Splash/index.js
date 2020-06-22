@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Section from "../../../components/Section";
 import { Button } from "../../../components";
 import Fonts from "../../../utils/fonts";
-
+import background from "../../../resources/images/8_rendicion_de_cuentas/1_integridad_y_transparencia.png";
 import { useDevice, isLaptop } from "../../../hooks";
 
 const Base = styled.div`
@@ -17,7 +17,7 @@ const Base = styled.div`
 const Container = styled(Base)`
 	position: relative;
 	height: 100%;
-	background-image: url(https://picsum.photos/130/130);
+	background-image: url(${background});
 	background-position: ${props => (props.laptop ? "left" : "center")} center;
 	background-repeat: no-repeat;
 	background-size: cover;

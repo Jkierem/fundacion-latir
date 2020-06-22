@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Icon, Section } from "../../../components";
 import Fonts from "../../../utils/fonts";
 
-import amaLogo from "../../../resources/images/home/amalogo.jpg";
-import armonicosLogo from "../../../resources/images/home/espaciosarmonicoslogo.svg";
+import amaLogo from "../../../resources/images/1_inicio/4_logo_ama.jpg";
+import armonicosLogo from "../../../resources/images/1_inicio/5_logo_ea_fix.png";
 
 const TitleContainer = styled.div`
 	font-size: ${Fonts.SizeValues.Normal};
@@ -48,7 +48,7 @@ const Networking = () => {
 					<Icon src={amaLogo} alt={"Fundación AMA"} size={"big"} />
 				</IconContainer>
 				<IconContainer>
-					<Icon src="https://picsum.photos/130/130" alt={"Espacios Armónicos"} size={"big"} />
+					<Icon src={armonicosLogo} alt={"Espacios Armónicos"} size={"big"} alignment="column" />
 				</IconContainer>
 			</NetworkingContainer>
 		</Section>
