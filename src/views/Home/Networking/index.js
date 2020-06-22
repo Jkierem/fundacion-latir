@@ -45,7 +45,7 @@ const Networking = () => {
 			</TitleContainer>
 			<NetworkingContainer>
 				<IconContainer>
-					<Icon src={amaLogo} alt={"Fundación AMA"} size={"big"} />
+					<Icon src={amaLogo} alt={"Fundación AMA"} size={"big"} alignment="column" />
 				</IconContainer>
 				<IconContainer>
 					<Icon src={armonicosLogo} alt={"Espacios Armónicos"} size={"big"} alignment="column" />
