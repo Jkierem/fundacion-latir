@@ -1,50 +1,11 @@
 @font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-LIGHT.TTF");
-	font-weight: lighter;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-SEMIBOLD.TTF");
-	font-weight: 600;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-LIGHTITALIC.TTF");
+	font-family: OptimaMedium;
+	src: url("./resources/fonts/OptimaMedium/OptimaMedium.ttf");
 	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-REGULAR.TTF");
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-REGULARITALIC.TTF");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-BOLD.TTF");
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: QuinoaRound;
-	src: url("./resources/fonts/Quinoa/QUINOAROUND-BOLDITALIC.TTF");
-	font-weight: bold;
-	font-style: italic;
 }
 
 * {
-	font-family: Helvetica;
+	font-family: OptimaMedium;
 }
 
 h1 {

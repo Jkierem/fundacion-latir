@@ -24,7 +24,7 @@ const WideLogoContainer = styled.header`
 	justify-content: flex-start;
 	flex-direction: row;
 	font-weight: normal;
-	font-family: QuinoaRound;
+	font-family: OptimaMedium;
 	color: ${Colors.Primary.hexString()};
 	cursor: pointer;
 	user-select: none;

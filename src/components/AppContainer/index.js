@@ -11,7 +11,7 @@ const Content = styled.main`
 `;
 
 const Container = styled.div`
-	font-family: Helvetica;
+	font-family: OptimaMedium;
 `;
 
 const AppContainer = props => {
